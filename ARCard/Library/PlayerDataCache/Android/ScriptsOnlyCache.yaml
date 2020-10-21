@@ -1,19 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - FixedJoystick
+    - GameManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     Vuforia.UnityExtensions.dll:
     - Vuforia.ImageTargetBehaviour
     - Vuforia.TurnOffBehaviour
@@ -57,17 +58,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 29556}
+      Script: {instanceID: 13636}
     - Class: 114
-      Script: {instanceID: 29582}
+      Script: {instanceID: 13832}
     - Class: 114
-      Script: {instanceID: 29590}
+      Script: {instanceID: 14212}
     - Class: 114
-      Script: {instanceID: 29592}
+      Script: {instanceID: 15048}
     - Class: 114
-      Script: {instanceID: 29988}
+      Script: {instanceID: 15396}
     - Class: 114
-      Script: {instanceID: 29994}
+      Script: {instanceID: 16564}
+    - Class: 114
+      Script: {instanceID: 20778}
+    - Class: 114
+      Script: {instanceID: 20780}
+    - Class: 114
+      Script: {instanceID: 20782}
+    - Class: 114
+      Script: {instanceID: 20788}
+    - Class: 114
+      Script: {instanceID: 20790}
+    - Class: 114
+      Script: {instanceID: 20854}
+    - Class: 114
+      Script: {instanceID: 24790}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -75,6 +90,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -505,6 +528,90 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: 0d4e91123d1b8d73ba7efe8237c781ee
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: 13253e135f97749bb4dff9f8e089422a
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: ImageTargetBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: e459138c8e3a64f4586c645c90fca12b
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: DefaultTrackableEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: TurnOffBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: Vuforia
+    className: VuforiaBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VuforiaScripts.dll
+    namespaceName: 
+    className: DefaultInitializationErrorHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 82c4ce2c915cf5ee82e6d62309a6c467
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: ed9f9ba4f86811683bd63e5cc6dae905
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
@@ -607,12 +714,6 @@ ScriptsOnlyBuild:
     className: GuideViewRenderingBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 13253e135f97749bb4dff9f8e089422a
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: ImageTargetBehaviour
-  - hash:
-      serializedVersion: 2
       Hash: b14bdc19729a47a24f3184da695f52b1
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
@@ -667,12 +768,6 @@ ScriptsOnlyBuild:
     className: SimulatorController
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: TurnOffBehaviour
-  - hash:
-      serializedVersion: 2
       Hash: 9fa9f1030164f334ee65e118172f3e58
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
@@ -689,18 +784,6 @@ ScriptsOnlyBuild:
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: VirtualButtonBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 8971d09ce7f62d9b5b8044d33c0f78e5
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 0d4e91123d1b8d73ba7efe8237c781ee
-    assemblyName: Vuforia.UnityExtensions.dll
-    namespaceName: Vuforia
-    className: VuforiaConfiguration
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1649,19 +1732,7 @@ ScriptsOnlyBuild:
     assemblyName: VuforiaScripts.dll
     namespaceName: 
     className: BoundingBoxRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultInitializationErrorHandler
-  - hash:
-      serializedVersion: 2
-      Hash: e459138c8e3a64f4586c645c90fca12b
-    assemblyName: VuforiaScripts.dll
-    namespaceName: 
-    className: DefaultTrackableEventHandler
   platform: 13
   scenePathNames:
   - "Assets/AR \u5834\u666F.unity"
-  playerPath: E:/KID/Unity_HC_T_ARCard/ARMonster.apk
+  playerPath: E:/KID/Unity_HC_T_ARCard/ARMonster1.apk
